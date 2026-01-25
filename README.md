@@ -1,0 +1,48 @@
+# Guías de Desarrollo Web II
+
+Repositorio con las guías de práctica para la materia de Desarrollo Web II, tercer año.
+
+## 📚 Guías Incluidas
+
+### Guía 1 - HTML y CSS Fundamentales
+Ejercicios y proyectos con HTML5, CSS3 y Tailwind CSS:
+- **Clipboard** - Landing page responsive
+- **Galería** - Galería de imágenes interactiva
+- **Login** - Formulario de inicio de sesión
+- **Pricing Card** - Tarjetas de precios
+- **Producto** - Página de producto
+- **Serie: The Mentalist** - Fan page (2008-2010)
+
+### Guía 2 - (Próximamente)
+En desarrollo...
+
+## 🚀 Tecnologías Utilizadas
+
+- HTML5
+- CSS3
+- Tailwind CSS
+- JavaScript
+- Google Fonts
+
+## 📁 Estructura del Repositorio
+
+```
+guias-dev-web-ll/
+├── Guia1_20245184/
+│   ├── clipboard/
+│   ├── galeria/
+│   ├── login/
+│   ├── pricing-card/
+│   ├── producto/
+│   └── serie/
+├── Guia2_20245184/
+└── ...
+```
+
+## 👨‍💻 Autor
+
+Estudiante de Desarrollo Web II - Carnet: 20245184
+
+## 📝 Licencia
+
+Proyecto realizado con fines educativos - 2026
