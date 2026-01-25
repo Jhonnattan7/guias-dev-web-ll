@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mentalist | Misterio y Psicología</title>
+
+  <!-- Google Fonts - Bebas Neue (similar al logo de The Mentalist) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'negro-base': '#0B0B0B',
+            'blanco-suave': '#F5F5F5',
+            'rojo-acento': '#DC143C',
+            'gris-apoyo': '#4A4A4A',
+            'amarillo-mentalist': '#FFD700',
+          },
+          fontFamily: {
+            'mentalist': ['Bebas Neue', 'sans-serif'],
+            'oswald': ['Oswald', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-negro-base text-blanco-suave font-sans">
+
+  <!-- HEADER / NAV -->
+  <header class="bg-[#1a1a1a] shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between flex-wrap">
+        <div class="flex items-center space-x-4">
+          <img src="images/red-jhon-logo.webp" alt="The Mentalist Logo" class="h-20 w-20 rounded-full" />
+          <h1 class="text-4xl font-mentalist tracking-wider text-blanco-suave">THE <span class="text-rojo-acento">MENTALIST</span></h1>
+        </div>
+        <ul class="flex flex-wrap gap-6 mt-4 md:mt-0 text-blanco-suave font-mentalist text-xl tracking-wide">
+          <li><a href="#about" class="hover:text-rojo-acento transition-colors duration-300">SOBRE LA SERIE</a></li>
+          <li><a href="#awards" class="hover:text-rojo-acento transition-colors duration-300">PREMIOS</a></li>
+          <li><a href="#characters" class="hover:text-rojo-acento transition-colors duration-300">PERSONAJES</a></li>
+          <li><a href="#myth" class="hover:text-rojo-acento transition-colors duration-300"><span class="text-rojo-acento">RED JOHN</span></a></li>
+          <li><a href="#seasons" class="hover:text-rojo-acento transition-colors duration-300">TEMPORADAS</a></li>
+          <li><a href="#theories" class="hover:text-rojo-acento transition-colors duration-300">TEORÍAS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <img src="images/logo-serie.png" alt="The Mentalist Banner" class="absolute inset-0 w-full h-full object-contain opacity-30 scale-75 translate-y-16" />
+    <div class="relative z-10 text-center px-4">
+      <h2 class="text-6xl md:text-8xl font-mentalist tracking-wider text-rojo-acento mb-4 drop-shadow-lg">THE MENTALIST</h2>
+      <p class="text-2xl md:text-3xl mb-8 text-blanco-suave">Misterio, crimen y deducción psicológica</p>
+      <a href="https://www.primevideo.com/-/es/detail/The-Mentalist/0JCAGVKV8JB0IM3RCVPIWENAMX" target="_blank" rel="noopener noreferrer" class="inline-block bg-rojo-acento hover:bg-red-900 text-blanco-suave font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">Ver en Prime Video</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="container mx-auto px-4 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <img src="images/poster-oficial.avif" alt="Poster oficial de The Mentalist" class="rounded-lg shadow-2xl w-full hover:scale-105 transition-transform duration-300" />
+      </div>
+      <div class="order-1 md:order-2">
+        <h2 class="text-5xl font-mentalist tracking-wide mb-6 text-rojo-acento border-l-4 border-rojo-acento pl-4">SOBRE LA SERIE</h2>
+        <p class="text-lg leading-relaxed text-blanco-suave">
+          <strong class="text-rojo-acento">The Mentalist</strong> (título en español: <em>El mentalista</em>) es una serie de televisión policial dramática 
+          emitida por la cadena <strong class="text-rojo-acento">CBS</strong> desde 2008 hasta 2015. La historia sigue a <strong class="text-rojo-acento">Patrick Jane</strong>, un consultor excepcional en 
+          observación humana que trabaja con el Buró de Investigación de California (CBI) y más tarde con el FBI, ayudando 
+          a resolver casos complejos gracias a su agudeza mental, mientras busca respuestas sobre el asesino que marcó su pasado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS SECTION -->
+  <section id="awards" class="bg-amarillo-mentalist py-20 relative overflow-hidden">
+    <!-- Imagen de fondo del poster -->
+    <div class="absolute inset-0 opacity-20">
+      <img src="images/poster-oficial.avif" alt="Poster" class="w-full h-full object-cover" />
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-6xl font-mentalist tracking-wider mb-12 text-center text-negro-base drop-shadow-md">PREMIOS Y RECONOCIMIENTOS</h2>
+      
+      <!-- Grid de premios -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        
+        <!-- Premio 1 -->
+        <div class="bg-negro-base bg-opacity-90 p-6 rounded-lg border-2 border-negro-base transform hover:scale-105 transition-all duration-300">
+          <div class="text-center">
+            <div class="text-4xl mb-3"></div>
+            <h3 class="font-oswald text-xl font-bold text-amarillo-mentalist mb-2">TCA AWARDS</h3>
+            <p class="text-blanco-suave text-sm">Nominada como <em>Outstanding New Program</em> (2009)</p>
+          </div>
+        </div>
+
+        <!-- Premio 2 -->
+        <div class="bg-negro-base bg-opacity-90 p-6 rounded-lg border-2 border-negro-base transform hover:scale-105 transition-all duration-300">
+          <div class="text-center">
+            <div class="text-4xl mb-3"></div>
+            <h3 class="font-oswald text-xl font-bold text-amarillo-mentalist mb-2">PEOPLE'S CHOICE</h3>
+            <p class="text-blanco-suave text-sm">Ganador como Drama Favorito (2009)</p>
+          </div>
+        </div>
+
+        <!-- Premio 3 -->
+        <div class="bg-negro-base bg-opacity-90 p-6 rounded-lg border-2 border-negro-base transform hover:scale-105 transition-all duration-300">
+          <div class="text-center">
+            <div class="text-4xl mb-3"></div>
+            <h3 class="font-oswald text-xl font-bold text-amarillo-mentalist mb-2">EMMY AWARDS</h3>
+            <p class="text-blanco-suave text-sm"><strong class="text-rojo-acento">Simon Baker</strong> nominado a Mejor Actor</p>
+          </div>
+        </div>
+
+        <!-- Premio 4 -->
+        <div class="bg-negro-base bg-opacity-90 p-6 rounded-lg border-2 border-negro-base transform hover:scale-105 transition-all duration-300">
+          <div class="text-center">
+            <div class="text-4xl mb-3"></div>
+            <h3 class="font-oswald text-xl font-bold text-amarillo-mentalist mb-2">GLOBO DE ORO</h3>
+            <p class="text-blanco-suave text-sm"><strong class="text-rojo-acento">Simon Baker</strong> nominado</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Texto adicional -->
+      <div class="bg-negro-base bg-opacity-90 p-8 rounded-lg border-l-4 border-rojo-acento max-w-4xl mx-auto">
+        <p class="text-lg leading-relaxed text-blanco-suave text-center">
+          La serie recibió variadas nominaciones y reconocimientos durante su emisión. 
+          <strong class="text-amarillo-mentalist">Simon Baker</strong>, quien interpreta a <strong class="text-rojo-acento">Patrick Jane</strong>, fue nominado a varios premios importantes. 
+          La serie también fue reconocida con un <strong class="text-amarillo-mentalist">Premio Golden Nymph</strong> en el Festival de Televisión de Monte-Carlo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Temporadas -->
+  <section id="seasons" class="container mx-auto px-4 py-20">
+    <h2 class="text-6xl font-mentalist tracking-wider mb-12 text-center text-rojo-acento">TEMPORADAS DESTACADAS</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <article class="bg-gris-apoyo rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+        <img src="images/personajes-juntos.jpg" alt="Temporada 1" class="w-full h-64 object-contain bg-negro-base" />
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-rojo-acento">Temporada 1</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            Introducción al personaje de Jane, su método y la caza de pistas del asesino. Los métodos poco convencionales 
+            de <strong class="text-rojo-acento">Patrick Jane</strong> comienzan a destacar en cada caso que el equipo del CBI enfrenta.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gris-apoyo rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+        <img src="images/poster-temporada2webp.webp" alt="Temporada 2" class="w-full h-64 object-contain bg-negro-base" />
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-rojo-acento">Temporada 2</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            Mayor tensión psicológica y vínculos entre casos. Los patrones comienzan a emerger, conectando diferentes 
+            investigaciones y profundizando en el oscuro pasado de Jane.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gris-apoyo rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+        <img src="images/patrick-poster.jpg" alt="Temporada 3" class="w-full h-64 object-contain bg-negro-base" />
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-rojo-acento">Temporada 3</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            La obsesión empieza a tomar el control, las reglas cambian y las decisiones de los personajes se vuelven 
+            cada vez más riesgosas mientras la búsqueda se intensifica.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gris-apoyo rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+        <img src="images/poster-alto.jpg" alt="Temporada 4" class="w-full h-64 object-contain bg-negro-base" />
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-rojo-acento">Temporada 4</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            Se exploran las consecuencias emocionales, la manipulación y los conflictos internos que afectan al equipo 
+            y sus investigaciones, poniendo a prueba la lealtad y la moral.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gris-apoyo rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+        <img src="images/the-mentalist-suspects.jpg" alt="Temporada 5" class="w-full h-64 object-contain bg-negro-base" />
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-rojo-acento">Temporada 5</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            La historia alcanza un punto crítico donde el pasado, la justicia y las decisiones personales cobran un 
+            papel central en el desarrollo de los acontecimientos.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gris-apoyo rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+        <img src="images/poster-amarillo.webp" alt="Temporadas 6-7" class="w-full h-64 object-contain bg-negro-base" />
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-rojo-acento">Temporadas 6-7</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            El equipo se integra con el <strong class="text-rojo-acento">FBI</strong> y se desarrollan nuevas dinámicas investigativas. Nuevos retos y relaciones 
+            surgen mientras la serie explora territorios diferentes.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CHARACTERS / AGENCIES -->
+  <section id="characters" class="bg-gris-apoyo py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-6xl font-mentalist tracking-wider mb-12 text-center text-rojo-acento">PERSONAJES PRINCIPALES</h2>
+
+      <div class="mb-16">
+        <h3 class="text-3xl font-oswald font-bold mb-8 text-blanco-suave border-l-4 border-rojo-acento pl-4 tracking-wide">CBI – EQUIPO PRINCIPAL (TEMPORADAS 1-5)</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/jane.jpeg" alt="Patrick Jane" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Patrick Jane</strong> <span class="text-blanco-suave">(Simon Baker)</span>: <span class="text-blanco-suave">Consultor mentalista del CBI con habilidades excepcionales de 
+              observación, hipnosis e ilusionismo, motivado por recuperar justicia por su familia.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en todas las temporadas (1-7)</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/lisbon.jpg" alt="Teresa Lisbon" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Teresa Lisbon</strong> <span class="text-blanco-suave">(Robin Tunney)</span>: <span class="text-blanco-suave">Agente al mando, estricta en su método y protectora del equipo.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en todas las temporadas (1-7)</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/cho.webp" alt="Kimball Cho" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Kimball Cho</strong> <span class="text-blanco-suave">(Tim Kang)</span>: <span class="text-blanco-suave">Agente pragmático con enfoque serio y directo.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en todas las temporadas (1-7)</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/rigsby.webp" alt="Wayne Rigsby" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Wayne Rigsby</strong> <span class="text-blanco-suave">(Owain Yeoman)</span>: <span class="text-blanco-suave">Parte del equipo con enfoque práctico.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en temporadas 1-6, invitado en temporada 7</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/van-pelt.webp" alt="Grace Van Pelt" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Grace Van Pelt</strong> <span class="text-blanco-suave">(Amanda Righetti)</span>: <span class="text-blanco-suave">Agente con inclinación tecnológica y apoyo investigativo.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en temporadas 1-6, invitada en temporada 7</em>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-oswald font-bold mb-8 text-blanco-suave border-l-4 border-rojo-acento pl-4 tracking-wide">FBI – EQUIPO POSTERIOR (TEMPORADAS 6-7)</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/dennis.webp" alt="Dennis Abbott" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Dennis Abbott</strong> <span class="text-blanco-suave">(Rockmond Dunbar)</span>: <span class="text-blanco-suave">Líder del equipo del <strong class="text-rojo-acento">FBI</strong> en temporadas posteriores.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en temporadas 6-7</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/wylie.jpg" alt="Jason Wylie" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Jason Wylie</strong> <span class="text-blanco-suave">(Joe Adler)</span>: <span class="text-blanco-suave">Analista tecnológico del FBI, asistente clave en soluciones de 
+              vigilancia e investigación.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en temporadas 6-7</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/fischer.jpg" alt="Kim Fischer" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Kim Fischer</strong> <span class="text-blanco-suave">(Emily Swallow)</span>: <span class="text-blanco-suave">Agente del FBI introducida antes de la fusión con el equipo de Jane.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en temporada 6</em>
+            </div>
+          </div>
+          <div class="bg-negro-base rounded-lg p-6 flex gap-6 items-start hover:bg-opacity-80 transition-all duration-300">
+            <img src="images/vega.jpg" alt="Michelle Vega" class="w-32 h-32 rounded-lg object-contain bg-gris-apoyo shadow-lg" />
+            <div>
+              <strong class="text-xl text-rojo-acento">Michelle Vega</strong> <span class="text-blanco-suave">(Josie Loren)</span>: <span class="text-blanco-suave">Agente novata del FBI al principio del equipo de Abbott.</span>
+              <em class="block mt-2 text-sm text-gray-400">Personaje principal en temporada 7</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RED JOHN / MYTH -->
+  <section id="myth" class="container mx-auto px-4 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="flex justify-center">
+        <img src="images/red-john-logo.png" alt="Símbolo de Red John" class="w-80 h-80 object-contain opacity-90 hover:scale-110 transition-transform duration-300" />
+      </div>
+      <div>
+        <h2 class="text-6xl font-mentalist tracking-wider mb-6 text-rojo-acento border-l-4 border-rojo-acento pl-4">RED JOHN<br><span class="text-3xl font-oswald">(MISTERIO CENTRAL)</span></h2>
+        <p class="text-lg leading-relaxed mb-6 text-blanco-suave">
+          <strong class="text-rojo-acento text-2xl">RED JOHN</strong>, también llamado <em>John el Rojo</em>, es el antagonista principal de la serie y la 
+          obsesión de <strong class="text-rojo-acento">Patrick Jane</strong>. Años antes de los eventos narrados, asesinó a la familia de Jane como venganza por 
+          ridiculizarlo públicamente, desencadenando la motivación detrás de la participación de Jane en el CBI. 
+          <strong class="text-rojo-acento">Red John</strong> es conocido por dejar una marca distintiva de una cara sonriente con sangre en las escenas del crimen 
+          y tiene una red de seguidores infiltrados en varias agencias.
+        </p>
+
+        <h3 class="text-2xl font-bold mb-4 text-blanco-suave">Características distintivas:</h3>
+        <ul class="space-y-3 text-blanco-suave">
+          <li class="flex items-start"><span class="text-rojo-acento mr-2 text-xl">•</span> Símbolos recurrentes y mensajes ocultos</li>
+          <li class="flex items-start"><span class="text-rojo-acento mr-2 text-xl">•</span> Impacto emocional y psicológico en <strong class="text-rojo-acento">Patrick Jane</strong></li>
+          <li class="flex items-start"><span class="text-rojo-acento mr-2 text-xl">•</span> La idea de un antagonista que opera desde las sombras</li>
+          <li class="flex items-start"><span class="text-rojo-acento mr-2 text-xl">•</span> Red de seguidores infiltrados en diferentes organizaciones</li>
+          <li class="flex items-start"><span class="text-rojo-acento mr-2 text-xl">•</span> Marca distintiva: <strong class="text-rojo-acento">cara sonriente dibujada con sangre</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAN THEORIES -->
+  <section id="theories" class="bg-gris-apoyo py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-6xl font-mentalist tracking-wider mb-12 text-center text-blanco-suave">TEORÍAS DE FANS Y PREGUNTAS ABIERTAS</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="bg-negro-base rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-rojo-acento hover:transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-rojo-acento">¿Qué tan lejos llegaba el conocimiento de Jane?</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            ¿<strong class="text-rojo-acento">Patrick Jane</strong> siempre supo más de lo que revelaba durante las investigaciones? Muchos fans debaten si Jane 
+            tenía pistas desde mucho antes de lo que mostraba al equipo.
+          </p>
+        </article>
+
+        <article class="bg-negro-base rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-rojo-acento hover:transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-rojo-acento">Pistas sin resolver</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            ¿Existen pistas o detalles que la serie dejó sin resolver intencionalmente? Algunos episodios presentan 
+            elementos que nunca fueron completamente explicados.
+          </p>
+        </article>
+
+        <article class="bg-negro-base rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-rojo-acento hover:transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-rojo-acento">¿Qué pasaría si...?</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            ¿Qué pasaría si Jane usara su lógica para otros criminales famosos? Los fans imaginan escenarios alternativos 
+            y cruces con otros personajes detectivescos populares.
+          </p>
+        </article>
+
+        <article class="bg-negro-base rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-rojo-acento hover:transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-rojo-acento">Análisis narrativo</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            Algunos episodios generan dudas sobre la coherencia narrativa o decisiones apresuradas en el guion, 
+            especialmente en las últimas temporadas.
+          </p>
+        </article>
+
+        <article class="bg-negro-base rounded-lg p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-rojo-acento hover:transform hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-rojo-acento">Comunidad activa</h3>
+          <p class="text-blanco-suave leading-relaxed">
+            La serie sigue siendo analizada por fans y creadores de contenido en plataformas como <strong class="text-rojo-acento">YouTube</strong> 
+            y <strong class="text-rojo-acento">TikTok</strong>, donde se comparten reseñas, teorías y análisis detallados sobre cada temporada.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-negro-base border-t-4 border-rojo-acento">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <!-- Columna 1: Info -->
+        <div>
+          <h4 class="text-2xl font-bold text-rojo-acento mb-4">The Mentalist</h4>
+          <p class="text-blanco-suave leading-relaxed">
+            Fan page dedicada a una de las series policiales más intrigantes de la televisión. 
+            Explorando el misterio, la psicología y el brillante trabajo detectivesco de <strong class="text-rojo-acento">Patrick Jane</strong>.
+          </p>
+        </div>
+        
+        <!-- Columna 2: Enlaces -->
+        <div>
+          <h4 class="text-xl font-bold text-rojo-acento mb-4">Navegación</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-blanco-suave hover:text-rojo-acento transition-colors duration-300">Sobre la serie</a></li>
+            <li><a href="#awards" class="text-blanco-suave hover:text-rojo-acento transition-colors duration-300">Premios</a></li>
+            <li><a href="#characters" class="text-blanco-suave hover:text-rojo-acento transition-colors duration-300">Personajes</a></li>
+            <li><a href="#myth" class="text-blanco-suave hover:text-rojo-acento transition-colors duration-300"><strong class="text-rojo-acento">Red John</strong></a></li>
+            <li><a href="#seasons" class="text-blanco-suave hover:text-rojo-acento transition-colors duration-300">Temporadas</a></li>
+            <li><a href="#theories" class="text-blanco-suave hover:text-rojo-acento transition-colors duration-300">Teorías</a></li>
+          </ul>
+        </div>
+        
+        <!-- Columna 3: Detalles -->
+        <div>
+          <h4 class="text-xl font-bold text-rojo-acento mb-4">Datos de la serie</h4>
+          <ul class="space-y-2 text-blanco-suave">
+            <li><span class="text-rojo-acento">•</span> Temporadas: <strong class="text-rojo-acento">7</strong> (2008-2015)</li>
+            <li><span class="text-rojo-acento">•</span> Episodios: <strong class="text-rojo-acento">151</strong></li>
+            <li><span class="text-rojo-acento">•</span> Cadena: <strong class="text-rojo-acento">CBS</strong></li>
+            <li><span class="text-rojo-acento">•</span> Género: Drama policial</li>
+            <li><span class="text-rojo-acento">•</span> Creador: <strong class="text-rojo-acento">Bruno Heller</strong></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Línea divisoria -->
+      <div class="border-t border-rojo-acento pt-8 text-center">
+        <p class="text-blanco-suave">
+          Proyecto realizado con fines educativos — Fan page de <strong class="text-rojo-acento">The Mentalist</strong> © 2026
+        </p>
+        <p class="text-blanco-suave text-sm mt-2">
+          Todos los derechos de la serie pertenecen a <strong class="text-rojo-acento">CBS</strong> y <strong class="text-rojo-acento">Warner Bros. Television</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
